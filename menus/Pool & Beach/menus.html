@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visualización de PDF</title>
+        <!-- Bootstrap 4 & Font-Awesome CSS  -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" media="screen">
+        <!-- CUSTOM CSS -->
+        <link href="css/customs_menu.css" rel="stylesheet" media="screen">
+        <!-- HTML5 shiv and Respond.js | IE8 SUPPORT -->
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="container ">
+                <form>
+                    <div class="form-row allmenus">
+                        <div class="col-md-12 text-center feature-title">
+                            <h2>MENUS</h2>
+                            <h5 id="backButton"
+                                onclick="window.location.href = 'index.html';">BACK</h5><span
+                                class="glyphicon glyphicon-circle-arrow-right"></span>
+                            <a href="#" order="1"
+                                val="ejemplo1.pdf">BREAKFAST</a> |
+                            <a href="#" order="2" val="ejemplo2.pdf">LUNCH</a> |
+                            <a href="#" order="3" val="ejemplo3.pdf">DINNER</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <div id="pdfContainer">
+                            <!-- Aquí se cargarán las páginas del PDF seleccionado -->
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer">
+            <div class="container"></div>
+        </div>
+
+        <!-- PDF JS  -->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script> -->
+        <script src="js/PDF/pdf.js"></script>
+        <script src="js/PDF/pdf.worker.js"></script>
+        <!-- MAIN JS  -->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

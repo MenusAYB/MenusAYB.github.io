@@ -1,0 +1,51 @@
+body, html {
+    /* BACKGROUND */
+    background: url("../image/background.jpg");
+  }
+  .container {
+    padding-top:50px;
+  }
+  h1.h1-customized {
+    color:white;
+    font-size: 5em;
+    font-weight: 800;
+  }
+  h2.h2-customized {
+    color:white;
+    font-size: 3em;
+    font-weight: 800;
+  }
+  span.custo {
+    color: lightgrey;
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+  .inset {
+    text-shadow: 1px 4px 6px grey, 0 0 0 #000, 1px 4px 6px grey
+  }
+  small.col {
+    font-size:0.8em;
+    color:#333;
+  }
+
+  div.custom {
+    background: image();
+    background-color:#2d3c51;
+    border-color:#2d3c51;
+  }
+  .img-responsive, .panel {
+    margin: 0 auto;
+  }
+  div.custom-bg {
+    padding-top:250px;
+    background-repeat:no-repeat;
+    background-size: 400px 300px; /* Ancho y alto de la imagen */
+    background-position: center; /* Opcional: puedes ajustar la posición */
+  }
+ 
+  .list-group-item {border: 0px;}
+
+
+
+
+  
