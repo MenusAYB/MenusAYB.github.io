@@ -22,6 +22,61 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <style>
+    /* Definición de la fuente BrownSTD */
+    @font-face {
+  font-family: 'BrownSTD';
+  src: url('/font/BrownSTD-Regular.woff2') format('woff2');
+  font-weight: normal; /* o 400 */
+  font-style: normal;
+}
+
+/* Definición de la fuente BrownSTD en negrita */
+@font-face {
+  font-family: 'BrownSTD';
+  src: url('/font/BrownSTD-Bold.woff2') format('woff2');
+  font-weight: bold; /* o 700 */
+  font-style: normal;
+}
+
+/* Definición de la fuente PlantinMTStd normal */
+@font-face {
+  font-family: 'PlantinMTStd';
+  src: url('/font/PlantinMTStd-Regular.woff2') format('woff2');
+  font-weight: normal; /* o 400 */
+  font-style: normal;
+}
+
+/* Definición de la fuente PlantinMTStd en negrita */
+@font-face {
+  font-family: 'PlantinMTStd';
+  src: url('/font/PlantinMTStd-Bold.woff2') format('woff2');
+  font-weight: bold; /* o 700 */
+  font-style: normal;
+}
+
+      /* Clase para aplicar BrownSTD normal */
+.brown-std-text {
+  font-family: 'BrownSTD', sans-serif;
+  font-weight: normal; /* o 400 */
+}
+
+/* Clase para aplicar BrownSTD en negrita */
+.brown-std-bold-text {
+  font-family: 'BrownSTD', sans-serif;
+  font-weight: bold; /* o 700 */
+}
+
+/* Clase para aplicar PlantinMTStd normal */
+.plantin-mt-std-text {
+  font-family: 'PlantinMTStd', serif;
+  font-weight: normal; /* o 400 */
+}
+
+/* Clase para aplicar PlantinMTStd en negrita */
+.plantin-mt-std-bold-text {
+  font-family: 'PlantinMTStd', serif;
+  font-weight: bold; /* o 700 */
+}
 
       .icon-menu {
           margin-top: 1rem; /* Ajusta el margen superior según sea necesario */
@@ -65,7 +120,7 @@
           margin-top: 0.5rem; /* Espacio entre el botón y el menú desplegable */
       }
       .title-zone{
-        font-size: x-small;
+        font-size: small;
          color: #212529;
          font-weight: bold;
          background-color: #f8f9fa;
@@ -103,10 +158,10 @@
         </div>
         <div class="d-flex justify-content-end">
         </div>
-        <h1 class="text-center text-white">1HOMES CABO</h1>
-        <h2 class="text-center">
-          <span id="title-main" text-en="Menus" text-es="Menús"
-            class="badge badge-dark"></span>
+        <h1 class="text-center text-white brown-std-text">HOMES CABO</h1>
+        <h2 class="text-center brown-std-bold-text">
+          <span id="title-main" text-en="TASTE" text-es="TASTE"
+            class="badge badge-dark "></span>
         </h2>
         <br>
       </div>
@@ -120,18 +175,18 @@
           <div class="col-md-8">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">
-                  <b>Grab N'GO</b>
+                <h3 class="card-title brown-std-bold-text">
+                  Grab N'GO
                 </h3>
               </div>
               <div class="card-body mb-2">
-                <span id="title-grabngo"
-                  text-en="GRAB & GO | LOBBY | AVAILABLE DAILY FROM"
-                  text-es="GRAB & GO | LOBBY | ABIERTO TODOS LOS DÍAS DESDE"
-                  class="title-zone"></span><br><span
-                  class="badge badge-light">6AM-7PM</span>
+                <span
+                  id="title-grabngo"
+                  class="title-zone brown-std-bold-text"
+                  text-en="GRAB & GO | LOBBY | AVAILABLE DAILY FROM 6AM-7PM"
+                  text-es="GRAB & GO | LOBBY | ABIERTO TODOS LOS DÍAS DESDE 6AM-7PM"></span>
                 <br>
-                <span id="text-grabngo"
+                <span class="brown-std-text" id="text-grabngo"
                   text-en="Thoughtfully curated selection of ready-made local, artisan
                 goods available in a convivial neighborhood gathering spot to
                 Grab N'Go."
@@ -162,18 +217,19 @@
           <div class="col-md-8">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">
-                  <b>Mezcal Bar</b>
+                <h3 class="card-title brown-std-bold-text">
+                  Mezcal Bar
                 </h3>
               </div>
               <div class="card-body mb-2 badge-sm">
-                <b class="title-zone" id="title-mezcal"
+                <b
+                  id="title-mezcal"
+                  class="title-zone brown-std-bold-text"
                   text-en="MEZCAL BAR | LOBBY | OPEN
-                TUESDAY TO SUNDAY FROM"
-                  text-es="MEZCAL BAR | LOBBY | ABIERTO DE MARTES A DOMINGO DESDE"></b><br><span
-                  class="badge badge-light">3PM-11PM</span>
+                TUESDAY TO SUNDAY FROM 3PM-11PM"
+                  text-es="MEZCAL BAR | LOBBY | ABIERTO DE MARTES A DOMINGO DESDE 3PM-11PM"></b>
                 <br>
-                <span id="text-mezcal"
+                <span class="brown-std-text" id="text-mezcal"
                   text-en="Inspired by the true style of a Mexican Mezcal bar, enjoy the
                 finest selection of mezcal & tequila offerings."
                   text-es="Inspirado en el verdadero estilo de un bar de mezcal mexicano, disfrute de la mejor selección de ofertas de mezcal y tequila."></span>
@@ -221,18 +277,19 @@
           <div class="col-md-8">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">
-                  <b>Pool Beach</b>
+                <h3 class="card-title brown-std-bold-text">
+                  Beach Pool Deck
                 </h3>
               </div>
               <div class="card-body mb-2 badge-sm">
-                <span id="title-beachpool" class="title-zone"
+                <span
+                  id="title-beachpool"
+                  class="title-zone brown-std-bold-text"
                   text-es="BEACH POOL DECK | ABIERTO TODOS LOS DÍAS
-                DESDE" text-en="BEACH POOL DECK | OPEN DAILY
-                  FROM"></span><br><span
-                  class="badge badge-light">10AM-6PM</span>
+                DESDE 10AM-6PM" text-en="BEACH POOL DECK | OPEN DAILY
+                  FROM 10AM-6PM"></span>
                 <br>
-                <span id="text-beachpool"
+                <span class="brown-std-text" id="text-beachpool"
                   text-es="Relájese bajo el sol y sumérjase en nuestras piscinas infinitas
                 frente a la playa, mientras toma una bebida y disfruta de los mariscos más frescos
                 de nuestro food truck."
@@ -242,12 +299,11 @@
                 <br><br>
                 <span class="title-zone" id="title-foodtruck"
                   text-es="FOOD TRUCK | BEACH POOL
-                | ABIERTO TODOS LOS DÍAS DESDE"
+                | ABIERTO TODOS LOS DÍAS DESDE 10AM-6PM"
                   text-en="FOOD TRUCK | BEACH POOL
-                | OPEN DAILY FROM"></span><br><span
-                  class="badge badge-light">10AM-6PM</span>
+                | OPEN DAILY FROM 10AM-6PM"></span>
                 <br>
-                <span id="text-foodtruck"
+                <span class="brown-std-text" id="text-foodtruck"
                   text-es="Saboree la auténtica cocina de Baja California con vista al mar y disfrute de la
                 selección de mariscos más frescos en nuestro concepto de farm-to-food truck
                 ubicado en nuestra piscina frente a la playa."
@@ -294,22 +350,23 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card custom-bg"
-              data-bg-image="image/roomservice.jpg"></div>
+              data-bg-image="image/roomservice.png"></div>
           </div>
           <div class="col-md-8">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">
-                  <b>Room Service</b>
+                <h3 class="card-title brown-std-bold-text">
+                  Room Services
                 </h3>
               </div>
               <div class="card-body mb-2">
-                <span id="title-roomservice" text-en="ROOM SERVICE 1HOMES"
-                  text-es="ROOM SERVICE 1HOMES"
-                  class="title-zone"></span><br><span
-                  class="badge badge-light"></span>
+                <span
+                  id="title-roomservice"
+                  class="title-zone brown-std-bold-text"
+                  text-en="ROOM SERVICES"
+                  text-es="ROOM SERVICES"></span>
                 <br>
-                <span id="text-roomservice"
+                <span class="brown-std-text" id="text-roomservice"
                   text-en="Convenience at your fingertips. Enjoy the ease of requesting services and meals from the comfort of your room, straight from our menu."
                   text-es="Comodidad a tu alcance. Disfruta de la facilidad de solicitar
                 servicios y comidas desde la comodidad de tu habitación, directamente
@@ -317,10 +374,12 @@
                 <br><br>
                 <div class="d-flex flex-wrap flex-md-row">
                   <a id="btn-roomservice"
+                  text-en="Menu "
+                  text-es="Menú "
                     hrefen="https://drive.google.com/file/d/1sA6tUNJTY06O-flsSR0iFV3gJYWDjNYZ/view"
                     hrefes="https://drive.google.com/file/d/1MIJ9F0sr_YlZ9MaErOxfSj-MJiGydX30/view"
                     href
-                    class="btn btn-dark mb-2 mr-md-2 mr-1">Menú <span
+                    class="btn btn-dark mb-2 mr-md-2 mr-1"><span
                       class="fa-solid fa-right-to-bracket mr-1"></span></a>
                 </div>
               </div>
@@ -329,6 +388,52 @@
         </div>
       </div>
       <!---:::::::::::::::::::::END Room service:::::::::::::::::::::-->
+
+      <!---:::::::::::::::::::::Chef service:::::::::::::::::::::-->
+      <div class="p-3 mt-3" style="background-color: #5884916b;">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card custom-bg"
+              data-bg-image="image/chefservice.png"></div>
+          </div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title brown-std-bold-text">
+                  Chef Services
+                </h3>
+              </div>
+              <div class="card-body mb-2">
+                <span
+                  id="title-roomservice"
+                  class="title-zone brown-std-bold-text"
+                  text-en="CHEF SERVICES"
+                  text-es="CHEF SERVICES"></span>
+                <br>
+                <span class="brown-std-text" id="text-roomservice"
+                  text-en="You'll nd menus designed around the seasons, full of
+                  fresh, local ingredients and dishes that are both good
+                  and good for you.."
+                  text-es="Encontrarás menús diseñados según las estaciones, llenos de
+                  ingredientes locales frescos y platos que son buenos
+                  y saludables."></span>
+                <br><br>
+                <div class="d-flex flex-wrap flex-md-row">
+                  <a id="btn-roomservice"
+                  text-en="Menu "
+                  text-es="Menú "
+                    hrefen="https://drive.google.com/file/d/1mJijAjb3GxbfNG2cTaZpaXNZN364-QmV/view"
+                    hrefes="https://drive.google.com/file/d/1mJijAjb3GxbfNG2cTaZpaXNZN364-QmV/view"
+                    href
+                    class="btn btn-dark mb-2 mr-md-2 mr-1"><span
+                      class="fa-solid fa-right-to-bracket mr-1"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---:::::::::::::::::::::END Chef service:::::::::::::::::::::-->
 
     </div>
 
