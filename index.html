@@ -89,7 +89,10 @@
           padding: 0;
           font-size: 1.5rem; /* Ajusta el tamaño del ícono si es necesario */
       }
-  
+      .dropdown-text {
+        color: #ffffff; /* Cambia el color aquí */
+        font-size: 1.2rem; /* Ajusta el tamaño del texto según sea necesario */
+      }
       /* Cambiar el color de la flecha del dropdown */
       .dropdown-toggle::after {
           display: inline-block;
@@ -103,7 +106,6 @@
           border-bottom: 0;
           border-left: 0.3em solid transparent;
       }
-  
       .navbar-light {
           background-color: rgba(255, 255, 255, 0); /* Blanco con 80% de opacidad */
       }
@@ -125,6 +127,7 @@
          font-weight: bold;
          background-color: #f8f9fa;
       }
+      
   </style>
   </head>
   <body>
@@ -137,6 +140,7 @@
                 id="languageDropdown" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-globe fa-sm icon-custom-color"></i>
+                <span class="dropdown-text"></span>
               </a>
               <div class="dropdown-menu dropdown-menu-right"
                 aria-labelledby="languageDropdown">
@@ -160,7 +164,7 @@
         </div>
         <h1 class="text-center text-white brown-std-text">HOMES CABO</h1>
         <h2 class="text-center brown-std-bold-text">
-          <span id="title-main" text-en="MENU" text-es="Menú"
+          <span id="title-main" text-en="TASTE" text-es="TASTE"
             class="badge badge-dark "></span>
         </h2>
         <br>
@@ -350,7 +354,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card custom-bg"
-              data-bg-image="image/roomservicev1.jpg"></div>
+              data-bg-image="image/roomservice.png"></div>
           </div>
           <div class="col-md-8">
             <div class="card">
@@ -374,8 +378,8 @@
                 <br><br>
                 <div class="d-flex flex-wrap flex-md-row">
                   <a id="btn-roomservice"
-                  text-en="Menu "
-                  text-es="Menú "
+                    text-en="Menu "
+                    text-es="Menú "
                     hrefen="https://drive.google.com/file/d/1sA6tUNJTY06O-flsSR0iFV3gJYWDjNYZ/view"
                     hrefes="https://drive.google.com/file/d/1MIJ9F0sr_YlZ9MaErOxfSj-MJiGydX30/view"
                     href
@@ -389,7 +393,52 @@
       </div>
       <!---:::::::::::::::::::::END Room service:::::::::::::::::::::-->
 
-     
+      <!---:::::::::::::::::::::Chef service:::::::::::::::::::::-->
+      <div class="p-3 mt-3" style="background-color: #5884916b;">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card custom-bg"
+              data-bg-image="image/chefservice.png"></div>
+          </div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title brown-std-bold-text">
+                  Chef Services
+                </h3>
+              </div>
+              <div class="card-body mb-2">
+                <span
+                  id="title-roomservice"
+                  class="title-zone brown-std-bold-text"
+                  text-en="CHEF SERVICES"
+                  text-es="CHEF SERVICES"></span>
+                <br>
+                <span class="brown-std-text" id="text-roomservice"
+                  text-en="You'll nd menus designed around the seasons, full of
+                  fresh, local ingredients and dishes that are both good
+                  and good for you."
+                  text-es="Encontrarás menús diseñados según las estaciones, llenos de
+                  ingredientes locales frescos y platos que son buenos
+                  y saludables."></span>
+                <br><br>
+                <div class="d-flex flex-wrap flex-md-row">
+                  <a id="btn-roomservice"
+                    text-en="Menu "
+                    text-es="Menú "
+                    hrefen="https://drive.google.com/file/d/1mJijAjb3GxbfNG2cTaZpaXNZN364-QmV/view"
+                    hrefes="https://drive.google.com/file/d/1mJijAjb3GxbfNG2cTaZpaXNZN364-QmV/view"
+                    href
+                    class="btn btn-dark mb-2 mr-md-2 mr-1"><span
+                      class="fa-solid fa-right-to-bracket mr-1"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---:::::::::::::::::::::END Chef service:::::::::::::::::::::-->
+
     </div>
 
     <!-- Jquery -->
