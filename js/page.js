@@ -31,8 +31,10 @@ $(document).ready(function () {
         $('.dropdown-item').each(function () {
             if (selectedLanguage === 'en') {
                 $(this).text($(this).attr('text-en'));
+                $(".dropdown-text").text("English")
             } else if (selectedLanguage === 'es') {
                 $(this).text($(this).attr('text-es'));
+                $(".dropdown-text").text("Español")
             }
         });
         // Cambiar el texto según el idioma seleccionado
